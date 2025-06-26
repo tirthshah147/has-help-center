@@ -13,7 +13,7 @@ export default function HelpCenterDocs() {
   const [url, setUrl] = useState('')
   const [docs, setDocs] = useState<Doc[] | null>(null)
   const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  const [, setError] = useState<string | null>(null)
 
   /* ── util: last path segment → nice title ───────── */
   const deriveTitle = (href: string) => {
